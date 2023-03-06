@@ -78,11 +78,12 @@
         background-color:#FFD700 ;
         border-radius: 20px;
         padding-left: 20px;
+        height: 550px;
     }
 
     .introduction:before {
         width: 300px;
-        height:495px ;
+        height:500px ;
     }
 
     .section {
@@ -96,7 +97,7 @@
 
     .Skill {
         width: 300px;
-        height: 500px;
+        height: 520px;
     }
 
 
