@@ -5,9 +5,141 @@
 }
 
 /* Tablet */
-@media (min-width:740px) and (max-width: 1023)
+@media (min-width:740px) and (max-width: 1023px)
 {
+    header{
+        width: auto;
+    }
+
+    .header-top ul li a {
+        font-size: 20px;
+    }
+
+    li  
+    {
+        width: 110px;
+        height: 50px;
+    }
+
+    .wellcom
+    {
+        align-items: center;
+        font-size: 50px;
+    }
+
+    .wellcom::before
+    {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: auto;
+        width: 0%;
+        height: 100%;
+        color: #FFD700;
+        -webkit-text-stroke: 0 #FFD700;
+        overflow: hidden;
+        border-right: 1px solid #ccc;
+        animation: animte 2s linear infinite;
+        -webkit-animation: animate 2s linear infinite;
+    }
+
+    @keyframes animate
+    {
+        0%{
+            width: 0;
+        }
+        
+        100%{
+            width: 56%;
+        }
     
+    }
+
+    .container-sumary
+    {
+        margin: 20px 20px;
+        width: 414px;
+        align-items: center;
+        display:flex;
+        height: 1000px;
+        flex-direction: column;       
+    }
+
+    .introduction
+    {
+        width: 320px;
+        background-color:#FFD700 ;
+        border-radius: 20px;
+        padding-left: 20px;
+        height: 550px;
+    }
+
+    .introduction:before {
+        width: 300px;
+        height:500px ;
+    }
+
+    .section {
+        width: 325px;
+        align-items: center;
+    }
+
+    .section h2 {
+        font-size: 40px;
+    }
+
+    .Skill {
+        width: 300px;
+        height: 520px;
+    }
+
+
+    .section-2 {
+        width: 325px;
+        /* margin: 1rem 1rem; */
+        align-items: center;
+    }
+
+    
+    .section-2 h2 {
+        font-size: 40px;
+    }
+
+    .skill-fe {
+        width: 300px;
+        height: 80vh;
+        margin: 1rem 1rem;
+    }
+
+    .skill-fe ul{
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 600px;
+    }
+
+    .section-3 {
+        position: relative;
+        width: 325px;
+        height: auto;
+        align-items: center;
+    }
+
+    .section-3 h2 {
+        font-size: 40px;
+
+    }
+
+    .project {
+        width: 298px;
+        height: 500px;
+    }
+
+    footer {
+       align-items: center;
+    }
+
+     
 }
 
 /* Mobile */
